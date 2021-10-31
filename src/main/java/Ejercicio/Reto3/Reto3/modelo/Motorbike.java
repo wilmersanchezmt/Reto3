@@ -20,7 +20,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "motorbike")
 public class Motorbike implements Serializable{
-    
+   
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -45,7 +45,7 @@ public class Motorbike implements Serializable{
     public Integer getId() {
         return id;
     }
-
+    
     public void setId(Integer id) {
         this.id = id;
     }
@@ -104,8 +104,8 @@ public class Motorbike implements Serializable{
 
     public void setReservations(List<Reservaciones> reservations) {
         this.reservations = reservations;
-    }
-
+    }   
+    
     
     
     
